@@ -1,0 +1,113 @@
+from datetime import date
+
+import now as now
+
+# parcel delivery program
+"""
+today = date.today()
+print(today)
+now = datetime.now()
+
+current_time = now.strftime("%H : %M : %S")
+print("Current Time =", current_time)
+"""
+
+print("jumbo parcel delivery ltd, Nairobi")
+# the above statement is the welcome line
+add1 = "nairobi"
+add2 = "kiambu"
+add3 = "nakuru"
+add4 = "Uasin Gishu"
+"""
+initializing the delivery addresses
+"""
+name = input(str("kindly please enter your name: "))
+print("welcome " + name + "to our online service")
+print("we deliver to the following areas:")
+print("""
+add1. Nairobi
+add2. Kiambu
+add3. Nakuru
+add4. Uasin Gishu
+""")
+print("kindly please enter a valid delivery address: ")
+delivery_address = input(str("enter a valid delivery address as specified above: "))
+if delivery_address == "add1":
+    print("you selected " + add1 + " as your delivery address assigned add1")
+    print("Goods delivered within 1 to 2 hrs will be charged an extra cost of 2 dollars")
+
+    today = date.today()
+    print("your goods were dispatched")
+    print(today)
+    current_time = now.strftime("%H : %M : %S")
+    print("the exact time for dispatch was ", current_time)
+
+    print("your goods arrived ", today,  "did you receive them?")
+    responce = input(str("input Y for yes and N for no: "))
+    if responce == "Y" or "y`":
+        print(name + " thank you for doing business with us")
+    elif responce == "N" or "n":
+        print(name + " your goods to address " + delivery_address + " will arrive soon")
+    else:
+        print("invalid response. Use Y for yes and N for no")
+
+elif delivery_address == "add2":
+    print("you selected " + add2 + " as your delivery address assigned add2")
+    print("Goods delivered within 1 to 2 hrs will be charged an extra cost of 2 dollars")
+    today = date.today()
+    print("your goods were dispatched")
+    print(today)
+    current_time = now.strftime("%H : %M : %S")
+    print("the exact time for dispatch was ", current_time)
+    print("your goods arrived ", today,  "did you receive them?")
+
+    responce = input(str("input Y for yes and N for no: "))
+    if responce == "Y" or "y":
+        print(name + "thank you for doing business with us")
+    elif responce == "N" or "n":
+        print(name + " your goods to address " + delivery_address + " will arrive soon")
+    else:
+        print("invalid responce. Use Y for yes and N for no")
+
+elif delivery_address == "add3":
+    print("you selected " + add3 + " as your delivery address assigned add3")
+   #print("Goods delivered within 1 to 2 hrs will be charged an extra cost of 2 dollars")
+
+    today = date.today()
+    print("your goods were dispatched")
+    print(today)
+    current_time = now.strftime("%H : %M : %S")
+    print("the exact time for dispatch was  ", current_time)
+
+    print("your goods arrived ", today,  "did you receive them?")
+    responce = input(str("input Y for yes and N for no: "))
+    if responce == "Y" or "y":
+        print(name + "thank you for doing business with us")
+    elif responce == "N" or "n":
+        print(name + " your goods to address " + delivery_address + " will arrive soon")
+    else:
+        print("invalid responce. Use Y for yes and N for no")
+
+elif delivery_address == "add4":
+    print("you selected " + add4 + " as your delivery address assigned add4")
+   # print("Goods delivered within 1 to 2 hrs will be charged an extra cost of 2 dollars")
+
+    today = date.today()
+    print("your goods were dispatched")
+    print(today)
+    current_time = now.strftime("%H : %M : %S")
+    print("the exact time for dispatch was ", current_time)
+
+    print("your goods arrived ", today,  "did you receive them?")
+    responce = input(str("input Y for yes and N for no: "))
+
+    if responce == "Y" or "y":
+        print(name + "thank you for doing business with us")
+    elif responce == "N" or "n":
+        print(name + " your goods to address " + delivery_address + " will arrive soon")
+    else:
+        print("invalid responce. Use Y for yes and N for no")
+
+
+else:
+    print("the address you entered is invalid. try again")
